@@ -5,7 +5,7 @@ const TransactionList = ({transactions, calculateRewardPoints}) => {
       <h1 style={{margin: 4}}>Transaction List</h1> 
         <div style={{margin: "0px 10px", display: 'flex'}}>   
 
-          <div style={{width: 800 }}>
+          <div style={{width: 800}}>
             <h4 style={{margin: 4, textDecoration: 'underline'}}>Customer:</h4>
             {transactions.sort((a,b) => new Date(b.date) - new Date(a.date)).map((transaction, index) => (
               <div key={index} style={{margin: 4}}>
